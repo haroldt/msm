@@ -1,0 +1,8 @@
+%h1#logo
+  = image_tag('msmcolor.png')
+  = link_to Refinery::Core.site_name, refinery.root_path
+
+= render(:partial => "/refinery/menu", :locals => { |
+    :dom_id => 'menu',                              |
+    :css => 'menu'                                  |
+  })                                                |
