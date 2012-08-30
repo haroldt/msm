@@ -11,12 +11,17 @@ group :development, :test do
 gem 'sqlite3'
 end
 
+# Mail
+gem 'sendgrid'
+
+
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
+  gem 'bootstrap-sass', '~> 2.0.4.0'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
@@ -25,6 +30,7 @@ group :assets do
 end
 
 gem 'jquery-rails', '~> 2.0.0'
+gem 'haml-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -52,7 +58,10 @@ gem 'refinerycms', '~> 2.0.0'
 
 # Specify additional Refinery CMS Extensions here (all optional):
 gem 'refinerycms-i18n', '~> 2.0.0'
-#  gem 'refinerycms-blog', '~> 2.0.0'
-#  gem 'refinerycms-inquiries', '~> 2.0.0'
-#  gem 'refinerycms-search', '~> 2.0.0'
+ gem 'refinerycms-blog', '~> 2.0.0'
+ gem 'refinerycms-inquiries', '~> 2.0.0'
+ gem "refinerycms-news", '~> 2.0.0'
+ gem 'refinerycms-copywriting'
+ gem "social-buttons", git: "git://github.com/kristianmandrup/social-buttons.git"
+ gem 'refinerycms-search', '~> 2.0.0', :git => 'git://github.com/resolve/refinerycms-search.git', :branch => '2-0-stable'
 #  gem 'refinerycms-page-images', '~> 2.0.0'
